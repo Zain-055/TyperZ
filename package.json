@@ -1,0 +1,37 @@
+{
+  "name": "typerz",
+  "version": "1.0.0",
+  "description": "Free, offline typing speed test for Windows",
+  "license": "MIT",
+  "author": "TyperZ contributors",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "package:win": "electron-builder --win portable --x64"
+  },
+  "devDependencies": {
+    "electron": "^44.9.3",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
+    "appId": "org.typerz.desktop",
+    "productName": "TyperZ",
+    "asar": true,
+    "files": [
+      "main.cjs",
+      "typing_test_mvp.html",
+      "assets/typerz.ico"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "artifactName": "TyperZ-${version}-Windows-${arch}.${ext}",
+    "win": {
+      "icon": "assets/typerz.ico",
+      "target": [
+        "portable"
+      ],
+      "signExecutable": false
+    }
+  }
+}
