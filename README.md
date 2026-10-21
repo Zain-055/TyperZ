@@ -23,6 +23,9 @@ npm run package:win
 
 The resulting `TyperZ-1.0.0-Windows-x64.exe` is written to `dist`. It does not need to be installed and can run without an internet connection. The first dependency install and packaging build do require internet access to download Electron and its build tools; the finished executable does not.
 
+## Simple Executable File
+In assets folder, find .exe file. Download and directly run into your system.
+
 ## Open source
 
 TyperZ is released under the MIT License. See [LICENSE](./LICENSE).
